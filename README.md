@@ -176,7 +176,7 @@ Automated test cases for correctness and performance validation.
 ---
 ## 👤 Author
 
-**Your Name**  
+**Alikhan Korazbay**  
 Student - Design and Analysis of Algorithms
 
 ---
