@@ -1,3 +1,5 @@
 Graph ID,Vertices,Edges,Algorithm,MST Cost,Operations,Time (ms)
-3,10,15,Prim,25,38,0,36
-3,10,15,Kruskal,25,55,0,80
+1,50,120,Prim,216,312,0,54
+1,50,120,Kruskal,216,425,0,88
+2,100,250,Prim,523,694,0,42
+2,100,250,Kruskal,523,1237,0,88

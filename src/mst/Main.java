@@ -15,9 +15,10 @@ public class Main {
             
             // Read input graphs
             JSONHandler jsonHandler = new JSONHandler();
-            String inputFile = "src/data/ass_3_input.json";
+            //String inputFile = "src/data/ass_3_input.json";
             //String inputFile = "src/data/medium_graphs.json";
             //String inputFile = "src/data/large_graphs.json";
+            String inputFile = "src/data/extra_large_graphs.json";
             System.out.println("\nReading input from: " + inputFile);
             
             List<Graph> graphs = jsonHandler.readGraphsFromJSON(inputFile);
@@ -68,9 +69,10 @@ public class Main {
             }
             
             // Write results to JSON
-            String outputFile = "src/data/ass_3_output_generatedByMyself.json";
+            //String outputFile = "src/data/ass_3_output_generatedByMyself.json";
             //String outputFile = "src/data/ass_3_output_generatedByMyselfMedium.json";
             //String outputFile = "src/data/ass_3_output_generatedByMyselfLarge.json";
+            String outputFile = "src/data/ass_3_output_generatedByMyselfExtraLarge.json";
             jsonHandler.writeResultsToJSON(outputFile, allResults);
             System.out.println("Results written to: " + outputFile);
             
@@ -119,9 +121,10 @@ public class Main {
         }
 
         java.nio.file.Files.writeString(
-                java.nio.file.Paths.get("comparison_results.csv"),
+                //java.nio.file.Paths.get("comparison_results.csv"),
                 //java.nio.file.Paths.get("comparison_resultsMedium.csv"),
                 //java.nio.file.Paths.get("comparison_resultsLarge.csv"),
+                java.nio.file.Paths.get("comparison_resultsExtraLarge.csv"),
                 csv.toString()
         );
     }

@@ -6,7 +6,8 @@ import java.util.*;
 
 //JUnit tests for MST algoritms. Check correctness and basic perfomance needs
 
-public class MSTTest {
+public class
+MSTTest {
     
     private Graph smallGraph;
     private Graph mediumGraph;
