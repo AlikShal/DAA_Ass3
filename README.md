@@ -1,19 +1,14 @@
 # MST Algorithm Implementation - City Transportation Network Optimization
 
 [![Java](https://img.shields.io/badge/Java-11+-orange.svg)](https://www.oracle.com/java/)
-[![License](https://img.shields.io/badge/License-Academic-blue.svg)]()
 
-## 📋 Project Overview
-
-Implementation of **Prim's** and **Kruskal's algorithms** for finding Minimum Spanning Trees (MST) to optimize city transportation networks. This project is completed as part of the **"Design and Analysis of Algorithms"** course.
-
-### 🎯 Objective
+### Objective
 
 Find the minimum set of roads connecting all city districts with the lowest total construction cost while ensuring all districts are reachable from each other.
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ Prim's Algorithm with Priority Queue implementation
 - ✅ Kruskal's Algorithm with Union-Find data structure
@@ -25,7 +20,7 @@ Find the minimum set of roads connecting all city districts with the lowest tota
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 JavaAsik3/
@@ -55,7 +50,7 @@ JavaAsik3/
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Language:** Java 11+
 - **Libraries:**
@@ -65,75 +60,6 @@ JavaAsik3/
 - **Build Tool:** Maven/Gradle (optional)
 
 ---
-
-## ⚙️ Installation & Setup
-
-### Prerequisites
-
-- Java JDK 11 or higher
-- IntelliJ IDEA (or any Java IDE)
-- Gson library
-- JUnit 5 (for running tests)
-
-### Step 1: Clone Repository
-
-```bash
-git clone https://github.com/AlikShal/DAA_Ass3.git
-cd mst-city-network
-```
-
-### Step 2: Add Dependencies
-
-#### Using Maven (pom.xml):
-
-```xml
-<dependencies>
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>2.10.1</version>
-    </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>5.9.3</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
-```
-
-#### Using IntelliJ IDEA:
-
-1. File → Project Structure → Libraries
-2. Add → From Maven
-3. Enter: `com.google.code.gson:gson:2.10.1`
-4. Add: `org.junit.jupiter:junit-jupiter:5.9.3`
-
-### Step 3: Compilation
-
-```bash
-javac -cp ".:libs/gson-2.10.1.jar" -d bin src/mst/*.java
-```
-
-### Step 4: Run
-
-```bash
-java -cp "bin:libs/gson-2.10.1.jar" mst.Main
-```
-
-**Or via IntelliJ IDEA:**
-- Open `Main.java`
-- Click the green arrow next to `public static void main`
-
----
-
-## 🧪 Testing
-
-### Run All Tests
-
-**Via IntelliJ IDEA:**
-- Open `MSTTest.java`
-- Right-click → Run 'MSTTest'
 
 ### Test Coverage
 
@@ -145,7 +71,7 @@ java -cp "bin:libs/gson-2.10.1.jar" mst.Main
 - ✅ Performance and reproducibility
 
 ---
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
@@ -174,25 +100,67 @@ Main application class coordinating all components and generating reports.
 Automated test cases for correctness and performance validation.
 
 ---
-## 👤 Author
+## CSV Output(data/)
+
+#### Small Graphs
+![img.png](img.png)
+
+#### Medium Graphs
+![img_1.png](img_1.png)
+
+#### Large Graphs
+![img_2.png](img_2.png)
+
+#### Extra Large Graphs
+![img_3.png](img_3.png)
+---
+## Comparative analysis of algorithms
+#### Performance graphs
+![img_10.png](img_10.png)
+
+#### Comparative analysis of Prim and Kraskal algorithms in terms of operations and execution time
+![img_11.png](img_11.png)
+
+#### Key findings
+1. Number of operations
+
+* Prim's algorithm consistently performs fewer operations on all graph sizes
+* The gap increases as the graph size increases
+* Prim is almost 2 times more efficient on graphs of 1000+ vertices
+
+2. Execution time
+
+* On small and medium-sized graphs (up to 100 vertices) - almost identical
+* On large graphs, results vary but remain comparable
+* Kraskal is sometimes faster on very large graphs due to Union-Find optimisations
+
+3. Correctness
+
+* Both algorithms always find MSTs with the same cost
+* The number of edges in an MST is always equal to V-1 (correct)
+
+4. Practical recommendations
+
+For dense graphs (many edges) - Prim is better
+For sparse graphs - both are suitable
+* For very large graphs - Prim is more efficient in terms of operations
+
+---
+## Author
 
 **Alikhan Korazbay**  
 Student - Design and Analysis of Algorithms
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Course instructor Sayakulova Zarina for the interesting assignment
 - Open-source community for excellent libraries
 
 ---
 
-## 📞 Contact
+## Contact
 
 - GitHub: [@AlikShal](https://github.com/AlikShal)
 - Email: alikmalik7492@gmail.com
-
----
-
-**⭐ If this project was helpful, please star it!**
